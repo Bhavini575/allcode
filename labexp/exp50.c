@@ -1,5 +1,5 @@
+// ques 3
 #include <stdio.h>
-
 int main() {
     int i, j, num = 1;
 

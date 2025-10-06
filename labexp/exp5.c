@@ -1,27 +1,34 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int num, positive = 0, negative = 0, zero = 0;
     char again;
 
-    do {
+    do 
+    {
         printf("Enter any number: ");
         scanf("%d", &num);
 
-        if (num > 0) {
+        if (num > 0) 
+        {
             positive++;
-        } else if (num < 0) {
+        } 
+        else if (num < 0) 
+        {
             negative++;
-        } else {
+        } 
+        else 
+        {
             zero++;
         }
 
         printf("Do you want to enter another number (y/n)? ");
         scanf(" %c", &again);
 
-    } while (again == 'y' || again == 'Y');
+    } 
+    while (again == 'y' || again == 'Y');
 
-    printf("\nSummary:\n");
     printf("Positive numbers: %d\n", positive);
     printf("Negative numbers: %d\n", negative);
     printf("Zeros: %d\n", zero);

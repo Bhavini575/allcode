@@ -4,13 +4,13 @@ int main() {
     int num, i;
 
 
-    printf("Enter the number to print its table: ");
+    printf("Enter the no: ");
     scanf("%d", &num);
 
     printf("multiplication table of %d:\n", num);
 
-    // rec till 10
-    for (i = 1; i <= 10; i++) {
+    for (i = 1; i <= 10; i++) 
+    {
         printf("%d * %d = %d\n", num, i, num * i);
     }
 

@@ -151,7 +151,8 @@ void romantic()
     printf("%s\n\n", quotes[index]);
 
     printf("Here are your songs:\n");
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) 
+    {
         printf("%d. %s\n", i + 1, songs[i]);
     }
 
@@ -159,12 +160,14 @@ void romantic()
     printf("1. YouTube\n2. Spotify\n3. Go Back\n");
     printf("Enter your choice: ");
 
-    if (scanf("%d", &choice) != 1) {
+    if (scanf("%d", &choice) != 1) 
+    {
         while (getchar() != '\n');
         return;
     }
 
-    if (choice == 1) {
+    if (choice == 1) 
+    {
         char cmd[512];
         sprintf(cmd, "start \"\" \"%s\"", youtubeLink);
         system(cmd);
